@@ -15,7 +15,7 @@ defmodule Jsonrs.MixProject do
       description: description(),
       package: package(),
       docs: docs(),
-      source_url: "https://github.com/benhaney/jsonrs"
+      source_url: "https://github.com/vanvoljg/jsonrs"
     ]
   end
 
@@ -29,7 +29,7 @@ defmodule Jsonrs.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:rustler, "~> 0.21.0"},
+      {:rustler, "~> 0.21"},
       {:ex_doc, "~> 0.21", only: :dev, runtime: false},
     ]
   end
@@ -48,9 +48,9 @@ defmodule Jsonrs.MixProject do
 
   defp package() do
     [
-      maintainers: ["Ben Haney"],
+      maintainers: ["Ben Haney", "Jesse Van Volkinburg"],
       licenses: ["Unlicense"],
-      links: %{"GitHub" => "https://github.com/benhaney/jsonrs"},
+      links: %{"GitHub" => "https://github.com/vanvoljg/jsonrs"},
       files: ["lib", "mix.exs", "README*", "native/jsonrs/src", "native/jsonrs/.cargo", "native/jsonrs/README*", "native/jsonrs/Cargo*"]
     ]
   end
@@ -60,8 +60,7 @@ defmodule Jsonrs.MixProject do
       main: "readme",
       name: "Jsonrs",
       source_ref: "v#{@version}",
-      canonical: "http://hexdocs.pm/jsonrs",
-      source_url: "https://github.com/benhaney/jsonrs",
+      source_url: "https://github.com/vanvoljg/jsonrs",
       extras: [
         "README.md"
       ]
