@@ -10,10 +10,10 @@ path = "src/lib.rs"
 crate-type = ["dylib"]
 
 [dependencies]
-rustler = "0.21.0"
+rustler = "0.22.0-rc.0"
 serde = { version = "1.0", features = ["derive"] }
 serde_bytes = "0.11"
 serde_json = "1.0"
-serde_rustler = { git = "https://github.com/benhaney/serde_rustler", branch = "master" }
+serde_rustler = { git = "https://github.com/vanvoljg/serde_rustler", branch = "refactor/target_raspberry_pi0" }
 serde-transcode = "1.1"
 lazy_static = "1.0"
